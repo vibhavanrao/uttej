@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Business Dashboard</h1>
+    </header>
+    <main>
+        <section id="income-expenses">
+            <h2>Income and Expenses</h2>
+            <div id="chart-container">
+                <canvas id="income-expenses-chart"></canvas>
+            </div>
+            <form id="transaction-form">
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+                <label for="income">Income:</label>
+                <input type="number" id="income" step="0.01" required>
+                <label for="expenses">Expenses:</label>
+                <input type="number" id="expenses" step="0.01" required>
+                <button type="submit">Add Transaction</button>
+            </form>
+        </section>
+        <section id="suggestions">
+            <h2>Business Suggestions</h2>
+            <div id="suggestions-container">
+                <!-- Suggestions will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
